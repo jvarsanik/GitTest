@@ -68,9 +68,9 @@ var server = http.createServer(function(request, response) {
 //////////////////////////////
 // ACTUALLY START THE SERVER!!
 //////////////////////////////
-
-server.listen(3030, function() {
-	console.log("Server Listneing to Port 3030");
+var PORT_NUMBER = 3000;
+server.listen(PORT_NUMBER, function() {
+	console.log("Server Listneing to Port " + PORT_NUMBER);
 });
 
 
