@@ -56,7 +56,7 @@ $(document).ready(function() {
 		var message;
 		
 		if (result.success) {
-			message = '13 - You are now known as ' + result.name + '.';
+			message = '14 - You are now known as ' + result.name + '.';
 		} else {
 			message = result.message;
 		}
@@ -66,7 +66,7 @@ $(document).ready(function() {
 	// when joined a room
 	socket.on('joinResult', function(result) {
 		$('#room').text(result.room);
-		$('#messages').append(divSystemContentElement('13 - Room changed to ' + result.room + '.'));
+		$('#messages').append(divSystemContentElement('14 - Room changed to ' + result.room + '.'));
 	}); // end socket.on('joinResult... );
 	
 	
